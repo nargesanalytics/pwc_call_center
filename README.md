@@ -51,7 +51,7 @@ Data Cleaning for the dataset was done in Power Query as follows:
 After the dataset was cleaned and transformed, it was ready to be modeled, but the dataset just included one table, so the Data Modeling is nothing much to modify
 
 # Data Visualization
-![dashboard github]https://github.com/nargesanalytics/pwc_call_center/blob/main/Screenshot%202023-10-28%20204516.png
+![dashboard github](https://github.com/nargesanalytics/pwc_call_center/blob/main/Screenshot%202023-10-28%20204516.png)
 
 ### Measures
 - Avg_satsifaction = AVERAGE('Call Center'[Satisfaction rating])
