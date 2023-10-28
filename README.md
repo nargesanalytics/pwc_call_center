@@ -39,7 +39,7 @@ Data Cleaning for the dataset was done in Power Query as follows:
 - Number of answered ='Table.AddColumn(#"Changed Type", "Answered", each if [#"Answered (Y/N)"] = "Y" then 1 else 0)'
 - Abandoned Rate = 'Table.AddColumn(#"Changed Type1", "Abandoned", each if [#"Answered (Y/N)"] = "N" then 1 else 0)'
 - Number of resolved ='Table.AddColumn(#"Added Conditional Column1", "Query Resolved""", each if [#"Answered (Y/N)"] = "Y" and [Resolved] = "Y" then 1 else 0)'
-- Number of not resolved 'Table.AddColumn(#"Changed Type2", "Query Not Resolved", each if [#"Answered (Y/N)"] = "Y" and [Resolved] = "N" then 1 else  0)'
+- Number of not resolved= 'Table.AddColumn(#"Changed Type2", "Query Not Resolved", each if [#"Answered (Y/N)"] = "Y" and [Resolved] = "N" then 1 else  0)'
 - month = 'Table.AddColumn(#"Changed Type3", "Month Name", each Date.MonthName([Date]))'
 - minute = 'Table.AddColumn(#"Changed Type4", "Minute", each Time.Minute([AvgTalkDuration]))'
 
