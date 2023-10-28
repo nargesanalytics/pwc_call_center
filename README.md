@@ -64,5 +64,5 @@ After the dataset was cleaned and transformed, it was ready to be modeled, but t
 - Calls_received = COUNT('Call Center'[Call Id])
 - Calls_Resolved = sum('Call Center'[Query Resolved])
 - Total_call = COUNT('Call Center'[Call Id])
-- 
+  
 
